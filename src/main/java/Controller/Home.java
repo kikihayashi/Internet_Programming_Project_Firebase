@@ -25,8 +25,8 @@ import Model.MyDataBase;
 public class Home extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
-	private String databaseurl = "https://user-database-2a086.firebaseio.com";		
-	private MyDataBase mdb = new MyDataBase(databaseurl);
+	private final String DATABASE_URL = "https://user-database-2a086.firebaseio.com";		
+	private MyDataBase mdb = new MyDataBase(DATABASE_URL);
 	private DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
 	private DatabaseReference sellDataRef = rootRef.child("NTU_BS").child("SellData");
 
