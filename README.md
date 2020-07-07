@@ -6,8 +6,7 @@ About Project
 說明
 ---
 本專案為[舊版專案(Internet_Programming_Project)](https://github.com/kikihayashi/Internet_Programming_Project)的改良版 \
-不同於舊專案在本機產生TXT檔儲存使用者資料，而是使用Firebase資料庫來存放 \
-即使本機關機、資料依然存在於Firebase中。
+不同於舊專案在本機產生TXT檔儲存使用者資料，而是使用Firebase資料庫來存放，不占用本機儲存空間。
 
 執行成果
 ---
@@ -54,14 +53,31 @@ sorttable.js：實現動態排序表格，參考第三方套件[官網](http://w
 
 Source
 ---
-**客製Dialog：**\
-https://medium.com/@makkenasrinivasarao1/android-custom-dialog-with-list-of-items-ba1ab0e78e16
+**Maven in Eclipse：**\
+https://crunchify.com/how-to-create-dynamic-web-project-using-maven-in-eclipse/ \
+https://www.itread01.com/content/1541826970.html \
+https://www.itread01.com/content/1543296122.html \
+https://matthung0807.blogspot.com/2018/03/eclipse-maven-webdynamic-web-module-31.html \
+http://www.slf4j.org/codes.html 
 
-**GridLayoutManager使用：**\
-https://www.journaldev.com/13792/android-gridlayoutmanager-example
+**Servlet/JSP：**\
+https://openhome.cc/Gossip/ServletJSP/ \
+https://dotblogs.com.tw/alantsai/Tags?qq=servlet \
+https://dotblogs.com.tw/alantsai/Tags?qq=jsp
 
-**Mobile Vision Text API使用：**\
-https://codelabs.developers.google.com/codelabs/mobile-vision-ocr/#0 \
-https://www.luoow.com/dc_tw/100377642 \
-https://www.youtube.com/watch?v=rXvtNlX_5E0 \
-https://www.youtube.com/watch?v=xoTKpstv9f0
+**Expression Language：**\
+https://nanashi07.gitbooks.io/java-training/web.base/server/expression.language/ 
+
+**Firebase：**\
+https://firebase.google.com/docs/database/admin/save-data#java_9 \
+https://www.youtube.com/watch?v=OvDZVV5CbQg \
+https://stackoverflow.com/questions/33723139/wait-firebase-async-retrieve-data-in-android \
+https://stackoverflow.com/questions/41372562/returning-a-value-in-firebase-ondatachange \
+https://stackoverflow.com/questions/43576441/querying-data-from-firebase \
+https://stackoverflow.com/questions/37390864/how-to-delete-from-firebase-realtime-database \
+https://medium.com/firebase-developers/why-are-firebase-apis-asynchronous-callbacks-promises-tasks-e037a6654a93 \
+
+**CountDownLatch：**\
+https://ithelp.ithome.com.tw/articles/10208081 \
+https://stackoverflow.com/questions/61200486/firebase-admin-sdk-on-tomcat-servlet \
+https://kknews.cc/zh-tw/code/4o5z3q2.html 
