@@ -52,7 +52,7 @@ sellpage1.jsp：上架商品頁面 \
 userInfoPage1.jsp：使用者登入頁面(輸入帳號、密碼、是否自動登入) \
 userInfoPage2.jsp：使用者登入後頁面(顯示使用者個人資訊、購買紀錄) \
 webStyle.css：負責將頁面格式統一化 \
-sorttable.js：實現動態排序表格，參考第三方套件[官網](http://www.kryogenix.org/code/browser/sorttable/)
+sorttable.js：實現動態排序表格，參考第[三方套件](http://www.kryogenix.org/code/browser/sorttable/)
 
 Source
 ---
