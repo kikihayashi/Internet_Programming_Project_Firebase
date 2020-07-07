@@ -14,7 +14,7 @@ About Project
 ---
 本專案執行成果[可點選這裡查看](https://drive.google.com/file/d/1fH4EER6vM-MO9XTmcc3zmswce-USgTre/view?usp=sharing)
 
-程式邏輯
+設計概念
 ---
 本專案使用MVC設計方式來模擬一個購物網站 \
 使用者必須先"註冊"並"登入"後，才可在網頁中進行商品的"上架"與"購買" \
