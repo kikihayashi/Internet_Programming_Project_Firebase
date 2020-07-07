@@ -19,7 +19,6 @@ About Project
 以下將介紹專案的每個程式功能。
 
 **【Controller(extends HttpServlet)】**
-
 Home：負責處理使用者進入首頁的工作，是最初程式進入點 \
 Login：負責處理使用者登入的工作 \
 Logout：負責處理使用者登出的工作(刪除所有cookie、HttpSession) \
@@ -33,7 +32,6 @@ Sell：儲存使用者"上架商品"資訊 \
 User：儲存使用者"註冊"資訊
 
 **【Model】**
-
 CheckCookies：如果使用者有在"登入"頁面點選"自動登入"，此程式將會取得瀏覽器的cookie資料、驗證，並從Firebase中取資料 \
 CheckData：此程式負責使用者註冊登入、上架商品、購買商品時，會遇到的各種驗證與計算 \
 DataUpdate：當使用者"購買商品"時，"購買紀錄"、"上架商品"資料將會更動，此程式負責執行更新處理 \
@@ -42,7 +40,17 @@ MyDataBase：負責Firebase資料庫的初始化、存入、取出、移除動�
 SetToJavaBeans：將使用者的"註冊資料"、"上架商品"、"購買紀錄"資料存成JavaBeans格式
 
 **【View】**
-
+addUserPage1.jsp：使用者第一個註冊頁面(設定姓名、學號、Email...等) \
+addUserPage2.jsp：使用者第二個註冊頁面(設定帳號、密碼) \
+addUserPage3.jsp：使用者第三個註冊頁面(顯示所有註冊資訊) \
+buypage1.jsp：第一個購物頁面(顯示所有商品資訊，同時也是首頁) \
+buypage2.jsp：第二個購物頁面(商品數量選擇、金額試算、確認購買) \
+buypage3.jsp：第三個購物頁面(顯示本次購買商品的資訊、應付總金額) \
+sellpage1.jsp：上架商品頁面 \
+userInfoPage1.jsp：使用者登入頁面(輸入帳號、密碼、是否自動登入) \
+userInfoPage2.jsp：使用者登入後頁面(顯示使用者個人資訊、購買紀錄) \
+webStyle.css：負責將頁面格式統一化 \
+sorttable.js：實現動態排序表格，參考第三方套件[官網](http://www.kryogenix.org/code/browser/sorttable/)
 
 Source
 ---
