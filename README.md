@@ -72,6 +72,7 @@ https://dotblogs.com.tw/alantsai/Tags?qq=jsp
 https://nanashi07.gitbooks.io/java-training/web.base/server/expression.language/ 
 
 **Firebase：**\
+https://firebase.google.com/docs/admin/setup#java \
 https://firebase.google.com/docs/database/admin/save-data#java_9 \
 https://www.youtube.com/watch?v=OvDZVV5CbQg \
 https://stackoverflow.com/questions/33723139/wait-firebase-async-retrieve-data-in-android \
