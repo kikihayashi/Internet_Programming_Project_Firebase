@@ -63,7 +63,7 @@ public class MyDataBase {
 		Ref.setValueAsync(object);//如果本身沒有目錄，會自動生成
 	} 
 	
-	public static <T> void removeFromFirebase(DatabaseReference Ref)
+	public static void removeFromFirebase(DatabaseReference Ref)
 	{		
 		Ref.removeValueAsync();//移除此Ref目錄
 	} 
