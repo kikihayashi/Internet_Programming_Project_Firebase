@@ -1,92 +1,40 @@
-OCR
-===
-利用Mobile Vision Text API實現OCR功能
-
-About APP
+About Project
 ---
-**開發環境：** Android Studio 3.6.2 \
-**版本要求：** API 19 (Android 4.4)以上 \
-**測試機種：** SAMSUNG GALAXY A5 (Android 6.0.1)\
-**識別文字：** https://developers.google.com/vision/android/text-overview#recognized_languages
+**開發環境：** Eclipse neon.2 release (4.6.2) \
+**Servlet容器：** apache-tomcat-8.5.56
 
-Flow Chart
+說明
 ---
-**簡易流程圖：** [目前只有CameraActivity.class 和 UserActivity.class](https://github.com/kikihayashi/OCR_App_Android/blob/master/Flow%20Chart.pdf)
+本專案為[舊版專案(Internet_Programming_Project)](https://github.com/kikihayashi/Internet_Programming_Project)的改良版 \
+不同於舊專案在本機產生TXT檔儲存使用者資料，而是使用Firebase資料庫來存放
 
-build.grade(Project:OCR_Android)
+執行成果
 ---
-    buildscript {
-      repositories {
-        google()
-        jcenter()
-        maven {
-            url "http://maven.google.com"
-        }    
-        
-        ...
-        
-    allprojects {
-    repositories {
-        google()
-        jcenter()
-        maven {
-            url "https://jitpack.io"
-        }
-    }
+本專案執行成果[可點選這裡查看](https://drive.google.com/file/d/1fH4EER6vM-MO9XTmcc3zmswce-USgTre/view?usp=sharing)
 
-build.grade(Module.app)
+程式邏輯：本專案使用MVC設計方式來實現
 ---
-    dependencies {
-        ...  
-    implementation "androidx.cardview:cardview:1.0.0"
-    implementation 'com.google.android.gms:play-services-vision:20.0.0'
-    implementation "androidx.recyclerview:recyclerview-selection:1.1.0-rc01"
-    
 
-AndroidManifest
----
-    package="com.wood.ocr_android">
 
-    <uses-feature android:name="android.hardware.camera" android:required="true"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
 
-    <application
-    
-      ...
-      
-        android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name="com.wood.ocr_android.CameraActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+**【Controller()】**
 
-        <activity android:name="com.wood.ocr_android.UserActivity"
-                   android:screenOrientation="portrait">
-        </activity>     
-          
-+ 設置`android:screenOrientation="portrait"`時，可能會出現錯誤。需到File的Settings，左上角搜尋"Chrome OS"，將`Activity is locked to an orientation` (兩個)取消勾選。
-
-Class
----
 **Activity：** CameraActivity、UserActivity\
 **Adapter：** MyAdapter\
 **Dialog：** ToolDialog、ToolLayoutModel\
 **Mobile Vision Text API：** Ocr
 
-XML
----
+**【JavaBeans()】**
+
+![image](https://github.com/kikihayashi/OCR_App_Android/blob/master/test.png) 
+
+**【Model()】**
+
 **activity_user：** UserActivity的layout\
 **tool_dialog：** ToolDialog的layout\
 **tool_item：** 在MyAdapter會使用到的layout
 
-Test Result
----
-![image](https://github.com/kikihayashi/OCR_App_Android/blob/master/test.png) 
+
 
 
 Source
