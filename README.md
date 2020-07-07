@@ -7,18 +7,20 @@ About Project
 說明
 ---
 本專案為[舊版專案(Internet_Programming_Project)](https://github.com/kikihayashi/Internet_Programming_Project)的改良版 \
-不同於舊專案在本機產生TXT檔，儲存使用者資料，而是使用Firebase資料庫來存放，不占用本機儲存空間。
+新增Firebase資料庫與部分Javascript、CSS語法。不同於舊專案在本機產生TXT檔，儲存使用者資料 \
+而是使用Firebase資料庫來存放，不占用本機儲存空間。
 
 執行成果
 ---
 本專案執行成果[可點選這裡查看](https://drive.google.com/file/d/1fH4EER6vM-MO9XTmcc3zmswce-USgTre/view?usp=sharing)
 
-程式邏輯：
+程式邏輯
 ---
-本專案使用MVC設計方式來模擬一個購物網站，使用者必須先"註冊"並"登入"後，才可在網頁中進行商品的"上架"與"購買" \
+本專案使用MVC設計方式來模擬一個購物網站 \
+使用者必須先"註冊"並"登入"後，才可在網頁中進行商品的"上架"與"購買" \
 以下將介紹專案中每個程式的功能。
 
-**【Controller(extends HttpServlet)】**\
+**【Controller (extends HttpServlet)】**\
 Home：負責處理使用者進入"首頁"的工作，是最初程式進入點 \
 Login：負責處理使用者"登入"的工作 \
 Logout：負責處理使用者"登出"的工作(刪除所有cookie、HttpSession) \
@@ -26,13 +28,13 @@ Signup：負責處理使用者"註冊"的工作 \
 UserBuy：負責處理使用者商品"購買"的工作 \
 UserSell：負責處理使用者商品"上架"的工作
 
-**【JavaBeans(implements Serializable)】**\
+**【JavaBeans (implements Serializable)】**\
 Buy：存放使用者"購買紀錄"資訊 \
 Sell：存放使用者"上架商品"資訊 \
 User：存放使用者"註冊"資訊
 
 **【Model】**\
-CheckCookies：如果使用者有在"登入"頁面點選"自動登入"，重啟瀏覽器進入(Login)時，將會取得瀏覽器的cookie資料、驗證，並從Firebase中取資料 \
+CheckCookies：如果使用者有在"登入"頁面點選"自動登入"，重啟瀏覽器進入(Login)時，將會取得瀏覽器的cookie資料，驗證後從Firebase中取資料 \
 CheckData：此程式負責使用者註冊登入、上架商品、購買商品時，會遇到的各種驗證與計算 \
 DataUpdate：當使用者"購買商品"時，"購買紀錄"、"上架商品"資料將會更動，此程式負責執行更新處理 \
 InitCookies：在Home、UserSell中執行，如果使用者有在"登入"頁面點選"自動登入"，重啟瀏覽器進入(Home、UserSell)時，可維持登入狀態 \
