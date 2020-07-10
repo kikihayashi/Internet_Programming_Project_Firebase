@@ -85,3 +85,6 @@ https://medium.com/firebase-developers/why-are-firebase-apis-asynchronous-callba
 https://ithelp.ithome.com.tw/articles/10208081 \
 https://stackoverflow.com/questions/61200486/firebase-admin-sdk-on-tomcat-servlet \
 https://kknews.cc/zh-tw/code/4o5z3q2.html 
+
+**setDataAndType：**\
+https://www.itread01.com/content/1550349014.html
