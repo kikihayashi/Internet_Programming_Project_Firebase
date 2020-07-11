@@ -1,14 +1,14 @@
+Internet_Programming_Project_Firebase
+---
+本專案為[舊版專案(Internet_Programming_Project)](https://github.com/kikihayashi/Internet_Programming_Project)的改良版 \
+新增Firebase資料庫與部分Javascript、CSS語法。不同於舊專案在本機產生TXT檔，儲存使用者資料 \
+而是使用Firebase資料庫來存放，不占用本機儲存空間。
+
 About Project
 ---
 **開發環境：** Eclipse neon.2 release (4.6.2) \
 **資料庫：** Firebase Realtime Database \
 **Servlet容器：** apache-tomcat-8.5.56
-
-說明
----
-本專案為[舊版專案(Internet_Programming_Project)](https://github.com/kikihayashi/Internet_Programming_Project)的改良版 \
-新增Firebase資料庫與部分Javascript、CSS語法。不同於舊專案在本機產生TXT檔，儲存使用者資料 \
-而是使用Firebase資料庫來存放，不占用本機儲存空間。
 
 執行成果
 ---
